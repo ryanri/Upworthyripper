@@ -1,2 +1,4 @@
 Extracts a link to the content on an Upworthy page; de-clickbaiting, basically.
 Needs work on logging, possible expansion to other clickbaity sites.
+
+Requires link to be actually the Upworthy URL; will not follow redirects etc.
