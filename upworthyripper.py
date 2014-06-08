@@ -78,7 +78,8 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
 
     parser.add_argument('-l', '--logfile', nargs='?', default='./.upworthyLog',
-            help='file to log any failures to. Default is .upworthyLog in the current directory.')
+                        help='file to log any failures to. Default is '
+                             '.upworthyLog in the current directory.')
 
     parser.add_argument('link', help='Upworthy page to extract content from')
     args = parser.parse_args()
