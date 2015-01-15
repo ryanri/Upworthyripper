@@ -16,12 +16,14 @@ from bs4 import BeautifulSoup
 
 logfile = './.upworthyLog'
 
+
 # Confirm the link is to the correct site
 def check_domain(url):
     """
     Checks the domain is correct
     """
-    upworthy_re = re.compile(r'^(?:https?://)?(?:www\.)?(upworthy.com/.*)\??.*$')
+    upworthy_re = re.compile(r'^(?:https?://)?(?:www\.)?'
+                             '(upworthy.com/.*)\??.*$')
     matches = upworthy_re.match(url)
     if matches:
         return matches.group(1)
